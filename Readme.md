@@ -1,7 +1,10 @@
 ## Magento2 - Create custom form & display its value in Admin Grid
 
+> Magento2 an open-source e-commerce platform written in PHP.
 
 > In this extension we have created a Custom Form in Magento2 frontend & displayed it's value in admin grid. In order to do the same please install the extension.
+
+> Creating a custom form is a very basic need in any of the frameworks. In order to fulfil the same need in Magento2 we are going to check an example as shown in Screenshot & in order to implement the same you can follow to steps as mentioned below.
 
 > The Grid output you can see under Admin > Binstellar > Freehomemeasure Form Details 
 
