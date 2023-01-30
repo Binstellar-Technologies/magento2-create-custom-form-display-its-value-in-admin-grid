@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="hello_template" label="Product Inquiry" file="sendform.html" type="html" 
+    module="Binstellar_Freehomemeasure" area="frontend"/>
+    <template id="customer_template" label="Customer response" file="customer_template.html" type="html" module="Binstellar_Freehomemeasure" area="frontend"/>
+</config>

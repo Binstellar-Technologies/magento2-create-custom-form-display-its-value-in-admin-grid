@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+<route url="/V1/freehomemeasure/" method="POST">
+    <service class="Binstellar\Freehomemeasure\Api\FreehomemeasureInterface" method="setData"/>
+    <resources>
+        <resource ref="anonymous"/>
+    </resources>
+</route>
+<route url="/V1/state/list/" method="GET">
+    <service class="Binstellar\Freehomemeasure\Api\StatelistInterface" method="getStatelist"/>
+    <resources>
+        <resource ref="anonymous"/>
+    </resources>
+</route>
+</routes>

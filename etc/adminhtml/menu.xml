@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Binstellar::top_level" title="Binstellar" module="Binstellar_Freehomemeasure" sortOrder="9999" resource="Magento_Backend::content"/>
+        <add id="Binstellar_Freehomemeasure::freehomemeasure" title="Freehomemeasure Form Details" module="Binstellar_Freehomemeasure" sortOrder="10" action="freehomemeasure/freehomemeasure" resource="Binstellar_Freehomemeasure::freehomemeasure" parent="Binstellar::top_level"/>
+    </menu>
+</config>

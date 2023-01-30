@@ -1,0 +1,84 @@
+<!--@subject Thank you for your free measure booking enquiry @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"skin url=\"images/logo_email.gif\" _area='frontend'":"Email Logo Image"}
+@-->
+<!--@styles
+body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+@-->
+{{template config_path="design/email/header_template"}}
+<table class="message-details">
+<tr>
+    <td style="font-family: Arial,Helvetica,sans-serif; margin: 0 0 10px; text-transform: none; font-size: 16px; line-height: 21px; color: #565659;"> Hi <strong style="font-weight: bold;">{{var name}}</strong>,</td>
+    </tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr>
+        <td style="font-family: Arial,Helvetica,sans-serif; font-size: 13px; color: #565659;line-height: 1.47;">Thank you for your query. One of our staff members will be in touch to organise your free home measure.</td>
+    </tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr>
+        <td style="font-family: Arial,Helvetica,sans-serif;font-size: 13px; color: #565659;  line-height: 1.47;"><strong>{{trans "Your enquiry: "}}</strong></td>
+    </tr>
+    <tr>
+        <td style="font-family: Arial,Helvetica,sans-serif;font-size: 13px; color: #565659;  line-height: 1.47;"><strong>{{trans "First name: "}}</strong> {{var name}}</td>
+    </tr>
+    <tr>
+        <td style="font-family: Arial,Helvetica,sans-serif;font-size: 13px; color: #565659;  line-height: 1.47;"><strong>{{trans "Last name: "}}</strong> {{var lastname}}</td>
+    </tr>
+    <tr>
+        <td style="font-family: Arial,Helvetica,sans-serif;font-size: 13px; color: #565659;  line-height: 1.47;"><strong>{{trans "Email: "}}</strong> {{var email}}</td>
+    </tr>
+    <tr>
+        <td style="font-family: Arial,Helvetica,sans-serif;font-size: 13px; color: #565659;  line-height: 1.47;"><strong>{{trans "Phone: "}}</strong> {{var telephone}}</td>
+    </tr>
+    <tr>
+        <td style="font-family: Arial,Helvetica,sans-serif;font-size: 13px; color: #565659;  line-height: 1.47;"><strong>{{trans "Address: "}}</strong> {{var address}}</td>
+    </tr>
+    <tr>
+        <td style="font-family: Arial,Helvetica,sans-serif;font-size: 13px; color: #565659;  line-height: 1.47;"><strong>{{trans "State: "}}</strong> {{var state}}</td>
+    </tr>
+    <tr>
+        <td style="font-family: Arial,Helvetica,sans-serif;font-size: 13px; color: #565659;  line-height: 1.47;"><strong>{{trans "Postcode: "}}</strong> {{var postcode}}</td>
+    </tr>
+    <tr>
+        <td style="font-family: Arial,Helvetica,sans-serif;font-size: 13px; color: #565659;  line-height: 1.47;"><strong>{{trans "Store Postcode: "}}</strong> {{var store_postcode}}</td>
+    </tr>
+    <tr>
+        <td style="font-family: Arial,Helvetica,sans-serif;font-size: 13px; color: #565659;  line-height: 1.47;"><strong>{{trans "Store selected: "}}</strong> {{var storecheckbox}}</td>
+    </tr>
+    <tr>
+        <td style="font-family: Arial,Helvetica,sans-serif;font-size: 13px; color: #565659;  line-height: 1.47;"><strong>{{trans "Messsage: "}}</strong> {{var comment}}</td>
+    </tr>
+    <tr>
+        <td style="font-family: Arial,Helvetica,sans-serif;font-size: 13px; color: #565659;  line-height: 1.47;"><strong>{{trans "I'm interested in: "}}</strong> {{var interested_in}}</td>
+    </tr>
+    {{if interested_in_other}}
+    <tr>
+        <td style="font-family: Arial,Helvetica,sans-serif;font-size: 13px; color: #565659;  line-height: 1.47;"><strong>{{trans "Other: "}}</strong> {{var interested_in_other}}</td>
+    </tr>
+    {{/if}}
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr>
+        <td>Kind regards,</td>
+    </tr>
+    <tr>
+        <td>Binstellar</td>
+    </tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr>
+        <td>Visit: <u>www.binstellar.com.au</u></td>
+    </tr>
+    <tr>
+        <td>Call us: <a href="tel:1300502427" title="call Us">1300 502 427</a></td>
+    </tr>
+</table>
+    
+    {{template config_path="design/email/footer_template"}}                 

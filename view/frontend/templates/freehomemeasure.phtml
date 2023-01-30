@@ -1,0 +1,106 @@
+<h1>Free Home Measure</h1>
+<p>"You ring or email for our exclusive shop at home service."</p>
+
+<p>Binstellar takes the hassle out of new home furnishings by offering a free measure and shop at home service that brings our products right to your door.</p>
+
+<p>To book for a free home measure, please complete the form below and we will give a call back to organise your free home measure.</p>
+
+<script src="https://www.google.com/recaptcha/api.js" type="text/javascript" xml="space"></script>
+
+<form class="form contact"
+      action="<?php echo $block->getFormAction() ?>"
+      id="contact-form"
+      method="post"
+      data-hasrequired="<?= $block->escapeHtmlAttr(__('* Required Fields')) ?>"
+      data-mage-init='{"validation":{}}' >
+    <fieldset class="fieldset">
+        <legend class="legend"><span><?= $block->escapeHtml(__('Your details')) ?></span></legend><br />
+        <div class="field note no-label"><?= $block->escapeHtml(__('All fields are mandatory')) ?></div>
+        <div class="field firstname">
+            <label class="label" for="firstname"><span><?= $block->escapeHtml(__('First Name')) ?></span></label>
+            <div class="control">
+                <input name="firstname" id="firstname" title="<?= $block->escapeHtmlAttr(__('First Name')) ?>" value="<?= $block->escapeHtmlAttr($this->helper(\Magento\Contact\Helper\Data::class)->getPostValue('firstname') ?: $this->helper(\Magento\Contact\Helper\Data::class)->getUserName()) ?>" class="input-text" type="text" data-validate="{required:true}" placeholder="E.G. John"/>
+            </div>
+        </div>
+        <div class="field lastname">
+            <label class="label" for="lastname"><span><?= $block->escapeHtml(__('Last Name')) ?></span></label>
+            <div class="control">
+                <input name="lastname" id="lastname" title="<?= $block->escapeHtmlAttr(__('Last Name')) ?>" value="<?= $block->escapeHtmlAttr($this->helper(\Magento\Contact\Helper\Data::class)->getPostValue('lastname') ?: $this->helper(\Magento\Contact\Helper\Data::class)->getUserName()) ?>" class="input-text" type="text" data-validate="{required:true}" placeholder="E.G. Smith"/>
+            </div>
+        </div>
+        <div class="field email">
+            <label class="label" for="email"><span><?= $block->escapeHtml(__('Email')) ?></span></label>
+            <div class="control">
+                <input name="email" id="email" title="<?= $block->escapeHtmlAttr(__('Email')) ?>" value="<?= $block->escapeHtmlAttr($this->helper(\Magento\Contact\Helper\Data::class)->getPostValue('email') ?: $this->helper(\Magento\Contact\Helper\Data::class)->getUserEmail()) ?>" class="input-text" type="email" data-validate="{required:true, 'validate-email':true}" placeholder="E.G. john.smith@email.com"/>
+            </div>
+        </div>
+        <div class="field phone">
+            <label class="label" for="phone"><span><?= $block->escapeHtml(__('Phone')) ?></span></label>
+            <div class="control">
+                <input name="phone" id="phone" title="<?= $block->escapeHtmlAttr(__('Phone')) ?>" value="<?= $block->escapeHtmlAttr($this->helper(\Magento\Contact\Helper\Data::class)->getPostValue('phone')) ?>" data-validate="{required:true,'validate-number':true}" class="input-text" type="text" placeholder="E.G. 0212345678" />
+            </div>
+        </div>
+        <div class="field address">
+            <label class="label" for="address"><span><?= $block->escapeHtml(__('Street Address')) ?></span></label>
+            <div class="control">
+                <input name="address" id="address" title="<?= $block->escapeHtmlAttr(__('Street Address')) ?>" value="<?= $block->escapeHtmlAttr($this->helper(\Magento\Contact\Helper\Data::class)->getPostValue('telephone')) ?>" data-validate="{required:true}" class="input-text" type="text" placeholder="E.G. 123 King Street" />
+            </div>
+        </div>
+        <div class="field suburb">
+            <label class="label" for="suburb"><span><?= $block->escapeHtml(__('Suburb')) ?></span></label>
+            <div class="control">
+                <input name="suburb" id="suburb" title="<?= $block->escapeHtmlAttr(__('Suburb')) ?>" value="<?= $block->escapeHtmlAttr($this->helper(\Magento\Contact\Helper\Data::class)->getPostValue('telephone')) ?>" class="input-text" data-validate="{required:true}" type="text" placeholder="E.G. Springville" />
+            </div>
+        </div>
+        <div class="field state">
+            <label class="label" for="state"><span><?= $block->escapeHtml(__('State')) ?></span></label>
+                <div class="control">
+                    <?php 
+                    $statelist = $this->getStatelist();
+                    //echo '<pre>';print_r($statelist); die();
+                    ?>
+                    <select name="state">
+                    <?php foreach ($statelist as $value) { ?>
+                        <option <?php print_r( $value['name']); ?>><?php print_r( $value['name']); ?></option>
+                    <?php } ?>
+                    </select>
+            </div>
+        </div>
+        <div class="field postcode">
+            <label class="label" for="postcode"><span><?= $block->escapeHtml(__('Postcode')) ?></span></label>
+            <div class="control">
+                <input name="postcode" id="postcode" title="<?= $block->escapeHtmlAttr(__('Postcode')) ?>" value="<?= $block->escapeHtmlAttr($this->helper(\Magento\Contact\Helper\Data::class)->getPostValue('telephone')) ?>" class="input-text" data-validate="{required:true,'validate-number':true}" type="text" placeholder="E.G. 1234" />
+            </div>
+        </div>
+        <?= $block->getChildHtml('form.additional.info') ?>
+    </fieldset>
+    <div class="form-group">
+        <div class="g-recaptcha required" id="recaptcha"
+             data-sitekey="<?= $block->getSiteKey() ?>">
+        </div>
+             <div style="display:none" id="error-msg">
+                  <span><?php echo __('This is a required field.') ?></span>
+             </div>
+   </div>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <input type="hidden" name="hideit" id="hideit" value="" />
+            <button type="submit" title="<?= $block->escapeHtmlAttr(__('Submit')) ?>" class="action submit primary">
+                <span><?= $block->escapeHtml(__('SUBMIT')) ?></span>
+            </button>
+        </div>
+    </div>
+</form>
+  <script>
+    function checkCaptcha() {
+        if ((jQuery('#g-recaptcha-response').val()) === '') {
+            jQuery('#error-msg').css('display', 'block');
+            jQuery('#error-msg').css('color', '#df280a');
+            jQuery('#error-msg').css('font-size', 13);
+            return false;
+        }
+        else {
+            jQuery('#error-msg').css('display', 'none');
+        }
+    }
+   </script>

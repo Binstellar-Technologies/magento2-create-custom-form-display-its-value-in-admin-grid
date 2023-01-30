@@ -1,0 +1,67 @@
+<!--@subject Book Free Measure User Enquiry Details @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"skin url=\"images/logo_email.gif\" _area='frontend'":"Email Logo Image"}
+@-->
+<!--@styles
+body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+@-->
+{{template config_path="design/email/header_template"}}
+
+<table class="message-details">
+<tr>
+    <td>Hi <strong>Team Binstellar</strong>,</td>
+    </tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr>
+        <td>The following free home measure booking was received from the website on {{var currentdate}}, at {{var currenttime}}.</td>
+    </tr>
+    <tr>
+        <td>Their details are below:</td>
+    </tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr>
+        <td><strong>{{trans "First name: "}}</strong> {{var name}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Last name: "}}</strong> {{var lastname}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Email: "}}</strong> {{var email}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Phone: "}}</strong> {{var telephone}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Address: "}}</strong> {{var address}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "State: "}}</strong> {{var state}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Postcode: "}}</strong> {{var postcode}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Store Postcode: "}}</strong> {{var store_postcode}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Store selected: "}}</strong> {{var storecheckbox}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Messsage: "}}</strong> {{var comment}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "I'm interested in: "}}</strong> {{var interested_in}}</td>
+    </tr>
+    {{if interested_in_other}}
+    <tr>
+        <td><strong>{{trans "Other: "}}</strong> {{var interested_in_other}}</td>
+    </tr>
+    {{/if}}
+</table>
+
+{{template config_path="design/email/footer_template"}}

@@ -1,0 +1,123 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="sales_enquiry_admin_email_nsw" sortOrder="999" translate="label">
+			<label>Contact Us Sales Enquiry Emails</label>
+		</tab>
+		<section id="sales_enquiry_admin_email_nsw" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+			<label>Sales enquiry admin email</label>
+			<tab>sales_enquiry_admin_email_nsw</tab>
+			<resource>Binstellar_ContactusEmails::config_binstellar_contactusemails</resource>
+			<group id="sales_enquiry_admin_email_nsw" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Sales enquiry admin email</label>
+				<field id="sales_enquiry_admin_email_nsw_to" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Sales enquiry admin email NSW State To </label>
+					<comment/>
+				</field>
+				<field id="sales_enquiry_admin_email_nsw_bcc" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Sales enquiry admin email NSW State Bcc </label>
+					<comment/>
+				</field>
+				<field id="sales_enquiry_admin_email_qld_to" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Sales enquiry admin email QLD State To </label>
+					<comment/>
+				</field>
+				<field id="sales_enquiry_admin_email_qld_bcc" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Sales enquiry admin email QLD State Bcc </label>
+					<comment/>
+				</field>
+				<field id="sales_enquiry_admin_email_sa_to" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Sales enquiry admin email SA State To </label>
+					<comment/>
+				</field>
+				<field id="sales_enquiry_admin_email_sa_bcc" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Sales enquiry admin email SA State Bcc </label>
+					<comment/>
+				</field>
+				<field id="sales_enquiry_admin_email_vic_to" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Sales enquiry admin email VIC State To </label>
+					<comment/>
+				</field>
+				<field id="sales_enquiry_admin_email_vic_bcc" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Sales enquiry admin email VIC State Bcc </label>
+					<comment/>
+				</field>
+				<field id="sales_enquiry_admin_email_wa_to" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Sales enquiry admin email WA State To </label>
+					<comment/>
+				</field>
+				<field id="sales_enquiry_admin_email_wa_bcc" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Sales enquiry admin email WA State Bcc </label>
+					<comment/>
+				</field>
+				<field id="sales_enquiry_admin_email_act_to" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Sales enquiry admin email ACT State To </label>
+					<comment/>
+				</field>
+				<field id="sales_enquiry_admin_email_act_bcc" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Sales enquiry admin email ACT State Bcc </label>
+					<comment/>
+				</field>
+			</group>
+		</section>
+		<tab id="service_enquiry_admin_email_nsw" sortOrder="999" translate="label">
+			<label>Contact Us Service Enquiry Emails</label>
+		</tab>
+		<section id="service_enquiry_admin_email_nsw" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+			<label>Service enquiry admin email</label>
+			<tab>service_enquiry_admin_email_nsw</tab>
+			<resource>Binstellar_ContactusEmails::config_binstellar_contactusemails</resource>
+			<group id="service_enquiry_admin_email_nsw" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Service enquiry admin email</label>
+				<field id="service_enquiry_admin_email_nsw_to" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Service enquiry admin email NSW State To </label>
+					<comment/>
+				</field>
+				<field id="service_enquiry_admin_email_nsw_bcc" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Service enquiry admin email NSW State Bcc </label>
+					<comment/>
+				</field>
+				<field id="service_enquiry_admin_email_qld_to" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Service enquiry admin email QLD State To </label>
+					<comment/>
+				</field>
+				<field id="service_enquiry_admin_email_qld_bcc" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Service enquiry admin email QLD State Bcc </label>
+					<comment/>
+				</field>
+				<field id="service_enquiry_admin_email_sa_to" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Service enquiry admin email SA State To </label>
+					<comment/>
+				</field>
+				<field id="service_enquiry_admin_email_sa_bcc" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Service enquiry admin email SA State Bcc </label>
+					<comment/>
+				</field>
+				<field id="service_enquiry_admin_email_vic_to" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Service enquiry admin email VIC State To </label>
+					<comment/>
+				</field>
+				<field id="service_enquiry_admin_email_vic_bcc" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Service enquiry admin email VIC State Bcc </label>
+					<comment/>
+				</field>
+				<field id="service_enquiry_admin_email_wa_to" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Service enquiry admin email WA State To </label>
+					<comment/>
+				</field>
+				<field id="service_enquiry_admin_email_wa_bcc" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Service enquiry admin email WA State Bcc </label>
+					<comment/>
+				</field>
+				<field id="service_enquiry_admin_email_act_to" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Service enquiry admin email ACT State To </label>
+					<comment/>
+				</field>
+				<field id="service_enquiry_admin_email_act_bcc" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Service enquiry admin email ACT State Bcc </label>
+					<comment/>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
