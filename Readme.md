@@ -30,19 +30,36 @@ php bin/magento cache:flush
 
 ### Frontend Output
 
+<kbd>
+
 ![image1](https://user-images.githubusercontent.com/123800304/215443052-02054c02-f4fc-4fcf-9481-7849f3dc1487.png)
 
+</kbd>
 
 ### Admin Menu
+
+<kbd>
+
 ![image2](https://user-images.githubusercontent.com/123800304/215443495-7af2013c-d8bd-4545-948a-b3a02a593a7b.png)
 
+</kbd>
 
 ### Admin Grid
+
+<kbd>
+
 ![image4](https://user-images.githubusercontent.com/123800304/215443611-afa4fef7-08fe-4693-8955-d6f02dd038f6.png)
+
+</kbd>
 
 
 ### More Details for each form
+
+<kbd>
+
 ![image3](https://user-images.githubusercontent.com/123800304/215443818-78da8033-4ae3-4cad-90d0-6bccde802607.png)
+
+</kbd>
 
 
 &nbsp;
